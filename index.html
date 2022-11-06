@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light">
+    <h2>User Interface Survey 2</h2>
+    <br /><br />
+    <section id="review">
+      <h3>Question 1</h3>
+      <p>The following section is a sample review form.</p>
+      <form id="sample-review" action="">
+        <h2>Rating (1-5)</h2>
+        <div id="stars">
+          <img src="/star.png" alt="A star that is not filled in" />
+          <img src="/star.png" alt="A star that is not filled in" />
+          <img src="/star.png" alt="A star that is not filled in" />
+          <img src="/star.png" alt="A star that is not filled in" />
+          <img src="/star.png" alt="A star that is not filled in" />
+        </div>
+        <h2>Review</h2>
+        <textarea
+          name="samplereviewtext"
+          id="sample-review-text"
+          cols="50"
+          rows="10"
+        ></textarea>
+        <!-- Form Content -->
+      </form>
+      <p>What do you like/dislike about the sample review form?</p>
+      <div class="feedback">
+        <textarea
+          name="reviewfeedback"
+          id="review-feedback"
+          cols="50"
+          rows="10"
+        ></textarea>
+      </div>
+    </section>
+    <br />
+    <br />
+    <!-- Light/Dark Mode -->
+    <section id="light-dark">
+      <h3>Question 2</h3>
+      <div id="light-dark-icon">
+        <img src="/icons/light.png" alt="a light-dark icon" />
+      </div>
+      <p>How intuitive do you find the icon above?</p>
+      <div class="feedback">
+        <textarea
+          name="lightdarkfeedback"
+          id="light-dark-feedback"
+          cols="50"
+          rows="10"
+        ></textarea>
+      </div>
+    </section>
+    <br /><br />
+    <section id="overall">
+      <h3>Question 3</h3>
+      <p>What further feedback would you like to share?</p>
+      <div class="feedback">
+        <textarea
+          name="overallfeedback"
+          id="overall-feedback"
+          cols="50"
+          rows="10"
+        ></textarea>
+      </div>
+    </section>
+    <br />
+    <br />
+
+    <section id="submit">
+      <button onclick="sendMail();">Email Submission</button>
+    </section>
+
+    <script src="functions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Jost&family=Maven+Pro&family=Montserrat&family=PT+Sans&display=swap");
+
+html {
+  --whitespace: rgb(242, 242, 242);
+  --color-gray-600: rgb(214, 214, 214);
+  --color-gray-600B: rgb(181, 181, 181);
+  --color-gray-800: rgb(174, 174, 174);
+  --color-gray-800B: rgb(92, 92, 92);
+  --color-gray-900: rgb(23, 23, 23);
+  --color-gray-900B: rgb(0, 0, 0);
+}
+
+button {
+  width: 10rem;
+  height: 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.light button {
+  background-color: var(--color-gray-800);
+  border: 2px solid var(--color-gray-800B);
+  color: rgb(43, 39, 39);
+}
+
+.light button:hover {
+  cursor: pointer;
+  background-color: var(--color-gray-800B);
+}
+
+.dark button {
+  background-color: var(--color-gray-900);
+  border: 2px solid var(--color-gray-600B);
+  color: var(--whitespace);
+}
+
+.dark button:hover {
+  cursor: pointer;
+  background-color: var(--color-gray-600B);
+}
+
+body.light {
+  background: linear-gradient(
+    0deg,
+    var(--color-gray-600B),
+    var(--color-gray-600)
+  );
+}
+
+body.dark {
+  background: linear-gradient(
+    0deg,
+    var(--color-gray-900B),
+    var(--color-gray-900)
+  );
+  color: var(--whitespace);
+}
+
+h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+textarea {
+  border-radius: 5px;
+  margin: auto;
+  color: inherit;
+}
+
+.light textarea {
+  background-color: var(--whitespace);
+  border: 2px solid var(--color-gray-800B);
+  outline-color: var(--color-gray-800B);
+}
+
+.dark textarea {
+  background-color: var(--color-gray-900);
+  border: 2px solid var(--color-gray-600B);
+  outline-color: var(--color-gray-600B);
+}
+
+/* Review */
+
+#sample-review {
+  font-family: "IBM Plex Serif", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  width: 35rem;
+  padding: 0 0 2rem 0;
+  margin: 0 auto;
+}
+
+.light #sample-review {
+  background-color: var(--color-gray-800);
+  border: 3px solid var(--color-gray-800B);
+}
+
+.dark #sample-review {
+  background-color: var(--color-gray-800B);
+  border: 3px solid var(--color-gray-800);
+}
+
+#stars {
+  display: flex;
+  justify-content: center;
+}
+
+#stars img {
+  height: 3rem;
+  margin: 0 0.25rem;
+}
+
+#stars img:hover {
+  cursor: pointer;
+}
+
+#sample-review-text {
+  width: 25rem;
+  font: inherit;
+  resize: none;
+}
+
+/* Light-Dark */
+
+#light-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#light-dark-icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.light #light-dark-icon {
+  background-color: var(--color-gray-600);
+}
+
+.dark #light-dark-icon {
+  background-color: var(--color-gray-900B);
+}
+
+#light-dark-icon:hover {
+  cursor: pointer;
+}
+
+#light-dark-icon img {
+  height: 3rem;
+}
+
+/* Submit */
+
+#submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
